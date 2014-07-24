@@ -1,0 +1,9 @@
+#import "NSObject";
+
+-(ContactManager *)sharedManager{
+  ContactManager *instance = nil;
+  if(instance==nil){
+    instance = [[ContactManager alloc]init];
+  }
+  return instance;
+}
